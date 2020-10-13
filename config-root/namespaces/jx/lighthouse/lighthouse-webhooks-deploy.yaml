@@ -11,7 +11,7 @@ metadata:
   annotations:
     checksum/config: c230dfb2e8149c2eabf4b0937474a01f473e6596a00451210925ec22b21e1224
     wave.pusher.com/update-on-config-change: 'true'
-    jenkins-x.io/hash: '9fd82bebcf2d75faaee64cb3a3b7151ffaecf9dc749f830014c483ec1395dfdd'
+    jenkins-x.io/hash: '42c9505ed0781ebfaa317320f8bad1511b3db909e5ee22c6ede915e887641294'
   namespace: jx
 spec:
   replicas: 1

@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - jjasghar/jx3-minikube-testing
-      target_url: http://deck-jx.-jx.192.168.39.217.nip.io
+      target_url: http://deck-jx.-jx.192.168.39.202.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
