@@ -1,0 +1,50 @@
+# Source: jenkinsx-go-http/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-10-13T16:49:22Z"
+  deletionTimestamp: null
+  name: 'jenkinsx-go-http-0.0.1'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jjasghar
+      branch: master
+      committer:
+        accountReference:
+          - id: jjasghar-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: jjasghar
+      message: |
+        release 0.0.1
+      sha: 273c6e43a8d11252d558756f4f476939314a8ee4
+    - author:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: jjasghar@gmail.com
+        name: JJ Asghar
+      branch: master
+      committer:
+        accountReference:
+          - id: jj-asghar-0
+            provider: jenkins.io/git-github-userid
+        email: jjasghar@gmail.com
+        name: JJ Asghar
+      message: |
+        Jenkins X build pack
+      sha: 588f4c59ebf5f879a7ba00689c2e7bf91a75065d
+  gitCloneUrl: https://github.com/jjasghar/jenkinsx-go-http.git
+  gitHttpUrl: https://github.com/jjasghar/jenkinsx-go-http
+  gitOwner: jjasghar
+  gitRepository: jenkinsx-go-http
+  name: 'jenkinsx-go-http'
+  releaseNotesURL: https://github.com/jjasghar/jenkinsx-go-http/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
