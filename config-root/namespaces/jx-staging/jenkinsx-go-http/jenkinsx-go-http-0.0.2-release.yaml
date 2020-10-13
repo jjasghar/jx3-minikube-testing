@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2020-10-13T16:49:22Z"
+  creationTimestamp: "2020-10-13T19:43:28Z"
   deletionTimestamp: null
-  name: 'jenkinsx-go-http-0.0.1'
+  name: 'jenkinsx-go-http-0.0.2'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -12,7 +12,8 @@ spec:
   commits:
     - author:
         accountReference:
-          - provider: jenkins.io/git-github-userid
+          - id: jjasghar-0
+            provider: jenkins.io/git-github-userid
         email: jenkins-x@googlegroups.com
         name: jjasghar
       branch: master
@@ -23,11 +24,12 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jjasghar
       message: |
-        release 0.0.1
-      sha: 273c6e43a8d11252d558756f4f476939314a8ee4
+        release 0.0.2
+      sha: 806a32c3cc46692a64c1c150865ffb4c5d67fe27
     - author:
         accountReference:
-          - provider: jenkins.io/git-github-userid
+          - id: jj-asghar-0
+            provider: jenkins.io/git-github-userid
         email: jjasghar@gmail.com
         name: JJ Asghar
       branch: master
@@ -38,13 +40,17 @@ spec:
         email: jjasghar@gmail.com
         name: JJ Asghar
       message: |
-        Jenkins X build pack
-      sha: 588f4c59ebf5f879a7ba00689c2e7bf91a75065d
+        Updated the from, so we can see changes.
+
+        - Updated the title!!
+
+        Signed-off-by: JJ Asghar <jjasghar@gmail.com>
+      sha: 48ac061a203f81e43711ab612e0af11fd695ae97
   gitCloneUrl: https://github.com/jjasghar/jenkinsx-go-http.git
   gitHttpUrl: https://github.com/jjasghar/jenkinsx-go-http
   gitOwner: jjasghar
   gitRepository: jenkinsx-go-http
   name: 'jenkinsx-go-http'
-  releaseNotesURL: https://github.com/jjasghar/jenkinsx-go-http/releases/tag/v0.0.1
-  version: v0.0.1
+  releaseNotesURL: https://github.com/jjasghar/jenkinsx-go-http/releases/tag/v0.0.2
+  version: v0.0.2
 status: {}
