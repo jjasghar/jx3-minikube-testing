@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        jjasghar/jenkinsx-go-http: true
         jjasghar/jx3-minikube-testing: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        jjasghar/jenkinsx-go-http: merge
         jjasghar/jx3-minikube-testing: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - jjasghar/jx3-minikube-testing
+        - jjasghar/jenkinsx-go-http
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - jjasghar/jx3-minikube-testing
+        - jjasghar/jenkinsx-go-http
       target_url: http://deck-jx.-jx.192.168.39.202.nip.io
 kind: ConfigMap
 metadata:
