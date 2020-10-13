@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jjasghar
+    provider: github
+    repository: jenkinsx-go-http
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jjasghar-jenkinsx-go-http
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jjasghar/jenkinsx-go-http.git
+  org: jjasghar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkinsx-go-http
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jjasghar/jenkinsx-go-http

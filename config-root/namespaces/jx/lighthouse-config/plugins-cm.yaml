@@ -6,6 +6,10 @@ data:
       repos:
       - jjasghar/jx3-minikube-testing
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - jjasghar/jenkinsx-go-http
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -20,6 +24,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      jjasghar/jenkinsx-go-http:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jjasghar/jx3-minikube-testing:
       - config-updater
       - approve
@@ -49,6 +69,11 @@ data:
     - repos:
       - jjasghar/jx3-minikube-testing
       trusted_org: todo
+    - repos:
+      - jjasghar/jenkinsx-go-http
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null
