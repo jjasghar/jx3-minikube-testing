@@ -18,7 +18,7 @@ jxRequirements:
     gitServer: https://github.com
     namespace: jx
     provider: minikube
-    registry: 10.96.212.5
+    registry: 10.107.169.84
   environments:
   - ingress:
       domain: ""
