@@ -1,0 +1,18 @@
+# Source: jenkinsx-go-http/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: jenkinsx-go-http
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: jenkinsx-go-http
+              servicePort: 80
+      host: jenkinsx-go-http-jx-production.192.168.39.202.nip.io
